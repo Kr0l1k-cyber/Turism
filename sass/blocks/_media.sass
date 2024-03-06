@@ -22,7 +22,7 @@
                 line-height: 15px
 @media (max-width: 768px)
     .container
-        min-width: 576px
+        max-width: 576px
         width: 92%
     .navbar
         &__search, &-menu, &__user
@@ -42,4 +42,7 @@
                 width: 16px
                 height: 1px
                 background-color: $text-color
+@media (max-width: 576px)
+    .logo
+        max-width: 99px
            

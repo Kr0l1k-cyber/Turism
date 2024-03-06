@@ -343,24 +343,9 @@ template {
 .navbar__menu-button {
   display: none;
 }
-.navbar-bottom {
-  background-color: #0A223D;
-}
-.navbar-menu {
-  list-style: none;
-  margin: 0;
-  padding: 31px 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: #fff;
-}
-.navbar-menu__link {
-  color: inherit;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 14px;
+
+.menu-button {
+  display: none;
 }
 
 .logo {
@@ -446,7 +431,7 @@ template {
 }
 @media (max-width: 768px) {
   .container {
-    min-width: 576px;
+    max-width: 576px;
     width: 92%;
   }
   .navbar__search, .navbar-menu, .navbar__user {
@@ -467,5 +452,10 @@ template {
     width: 16px;
     height: 1px;
     background-color: #333333;
+  }
+}
+@media (max-width: 576px) {
+  .logo {
+    max-width: 99px;
   }
 }/*# sourceMappingURL=style.css.map */
