@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper', {
+let swiper = new Swiper('.swiper', {
     // Optional parameters
     // direction: 'vertical',
     loop: true,
@@ -13,6 +13,7 @@ const swiper = new Swiper('.swiper', {
       nextEl: '.slider-button--next',
       prevEl: '.slider-button--prev',
     },
+    effect: "fade",
   
     // And if we need scrollbar
     // scrollbar: {
