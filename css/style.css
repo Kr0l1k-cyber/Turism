@@ -475,6 +475,16 @@ template {
   font-weight: 400;
   line-height: 15px;
 }
+.hotel-grid {
+  display: flex;
+  justify-content: space-between;
+}
+.hotel-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .stars {
   width: 100%;
 }
@@ -554,6 +564,100 @@ template {
 .slider-button--prev {
   background-image: url(../Image/arrow-left.svg);
   left: 18px;
+}
+
+.booking {
+  font-family: Nunito;
+  border-radius: 8px;
+  width: 350px;
+  min-height: 210px;
+  background-color: #0A223D;
+  color: #fff;
+  padding: 28px;
+}
+.booking__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 9px;
+}
+.booking__prise {
+  display: flex;
+  flex-direction: column;
+}
+.booking__start {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 14px;
+}
+.booking__pricetag {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 33px;
+}
+.booking__per-room {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 14px;
+}
+.booking__room {
+  margin-top: 4px;
+}
+.booking__text {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.booking__description {
+  margin-left: 9px;
+}
+.booking__call-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 17px;
+}
+.booking__heading {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25px;
+}
+.booking__number {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+}
+.booking__num {
+  margin-left: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25px;
+  color: #fff;
+}
+.booking__button {
+  width: 100%;
+  min-height: 45px;
+  font-family: Nunito;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+  border-radius: 4px;
+  border: none;
+  background-color: #ec1f46;
+  color: #fff;
+  cursor: pointer;
+}
+
+.map {
+  width: 350px;
+  height: 213px;
+  background-color: black;
+  border-radius: 10px;
 }
 
 @media (max-width: 1200px) {
