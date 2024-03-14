@@ -1,23 +1,25 @@
 let swiper = new Swiper('.swiper', {
-    // Optional parameters
-    // direction: 'vertical',
     loop: true,
-  
-    // If we need pagination
-    // pagination: {
-    //   el: '.swiper-pagination',
-    // },
-  
-    // Navigation arrows
     navigation: {
       nextEl: '.slider-button--next',
       prevEl: '.slider-button--prev',
     },
-    effect: "fade",
-  
-    // And if we need scrollbar
-    // scrollbar: {
-    //   el: '.swiper-scrollbar',
-    // },
+    effect: "fade",  
   });
-  
+
+// Функция ymaps.ready() будет вызвана, когда
+    // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+    ymaps.ready(init);
+    function init(){
+        // Создание карты.
+        var myMap = new ymaps.Map("map", {
+            // Координаты центра карты.
+            // Порядок по умолчанию: «широта, долгота».
+            // Чтобы не определять координаты центра карты вручную,
+            // воспользуйтесь инструментом Определение координат.
+            center: [7.891525, 98.295000],
+            // Уровень масштабирования. Допустимые значения:
+            // от 0 (весь мир) до 19.
+            zoom: 16
+        });
+    }
