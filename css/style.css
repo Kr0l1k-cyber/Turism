@@ -747,7 +747,8 @@ template {
   }
 }
 @media (max-width: 992px) {
-  .container {
+  .container,
+  .newsletter-wrapper {
     max-width: 768px;
   }
   .logo {
@@ -799,7 +800,8 @@ template {
   }
 }
 @media (max-width: 768px) {
-  .container {
+  .container,
+  .newsletter-wrapper {
     max-width: 576px;
     width: 92%;
   }
@@ -855,6 +857,10 @@ template {
   .map {
     width: 100%;
   }
+  .newsletter-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 @media (max-width: 576px) {
   .logo {
@@ -865,5 +871,19 @@ template {
   }
   .hotel-slider {
     margin-bottom: 20px;
+  }
+  .newsletter {
+    padding: 76px 0 83px 0;
+  }
+  .newsletter-title {
+    font-weight: 300;
+    font-size: 20px;
+  }
+  .newsletter-title__strong {
+    font-weight: 600;
+    font-size: 30px;
+  }
+  .newsletter__title {
+    margin-bottom: 37px;
   }
 }/*# sourceMappingURL=style.css.map */
