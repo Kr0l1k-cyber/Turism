@@ -7,14 +7,14 @@ let hotelSlider = new Swiper('.hotel-slider', {
     effect: "fade",  
   });
 
-  let reviewsSlider = new Swiper('.reviews-slider', {
-    loop: true,
-    navigation: {
-      nextEl: '.swiper-button-prev',
-      prevEl: '.swiper-button-next',
-    },
-    effect: "fade",  
-  });
+let reviewsSlider = new Swiper('.reviews-slider', {
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next ',
+    prevEl: '.swiper-button-prev',
+  },
+  effect: "fade",  
+});
 
 ymaps.ready(init);
 function init(){
