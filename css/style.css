@@ -736,6 +736,7 @@ template {
   text-transform: uppercase;
   text-align: center;
   color: #333333;
+  margin-bottom: 70px;
 }
 .reviews-slider__item {
   background-color: #fff;
@@ -743,7 +744,10 @@ template {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 730px;
+  margin: 45px auto 0;
   margin-top: 45px;
+  padding: 0 62px 30px;
 }
 .reviews-slider__profile {
   display: flex;
@@ -759,6 +763,19 @@ template {
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
+  margin-bottom: 9px;
+}
+.reviews-slider__username {
+  font-weight: 700;
+  font-size: 12px;
+  color: #ec1f46;
+}
+.reviews-slider__text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 160%;
+  text-align: justify;
+  margin: 0;
 }
 
 @media (max-width: 1200px) {
