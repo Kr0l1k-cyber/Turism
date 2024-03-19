@@ -37,6 +37,25 @@
                 height: 47px
                 right: 62px
                 top: 118px
+        &__button
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            width: 30px
+            height: 30px
+            background-repeat: no-repeat
+            background-size: 10px
+            background-position: center
+            border: none
+            background-color: transparent
+            cursor: pointer
+            z-index: 9
+            &--prev
+                background-image: url(../Image/arrow-pev-secondary.svg)
+                left: 0
+            &--next
+                background-image: url(../Image/arrow-next-secondary.svg)
+                right: 0
         &__profile
             display: flex
             flex-direction: column

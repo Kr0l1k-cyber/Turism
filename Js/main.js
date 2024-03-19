@@ -10,10 +10,10 @@ let hotelSlider = new Swiper('.hotel-slider', {
 let reviewsSlider = new Swiper('.reviews-slider', {
   loop: true,
   navigation: {
-    nextEl: '.swiper-button-next ',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.reviews-slider__button--next',
+    prevEl: '.reviews-slider__button--prev',
   },
-  effect: "fade",  
+  effect: "navigation",  
 });
 
 ymaps.ready(init);
