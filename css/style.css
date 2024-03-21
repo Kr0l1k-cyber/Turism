@@ -848,10 +848,10 @@ template {
   .container {
     max-width: 900px;
   }
-  .slider {
-    width: 450px;
+  .hotel-slider__item {
+    max-width: 580px;
   }
-  .swiper-slider__image {
+  .hotel-slider__image {
     height: 100%;
     background-size: cover;
   }
@@ -893,11 +893,12 @@ template {
     flex-direction: column;
   }
   .hotel-slider {
+    width: 768px;
     margin: 0;
     margin-bottom: 30px;
   }
   .hotel-slider__item {
-    width: 768px;
+    max-width: 768px;
   }
   .hotel-right {
     flex-direction: row;

@@ -1,10 +1,10 @@
 @media (max-width: 1200px)
     .container
         max-width: 900px
-    .slider
-        width: 450px
-    .swiper
+    .hotel
         &-slider
+            &__item
+                max-width: 580px
             &__image
                 height: 100%
                 background-size: cover
@@ -38,10 +38,11 @@
         &-grid
             flex-direction: column
         &-slider
+            width: 768px
             margin: 0
             margin-bottom: 30px
             &__item                
-                width: 768px
+                max-width: 768px
         &-right
             flex-direction: row
             align-items: flex-start
