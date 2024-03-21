@@ -12,6 +12,9 @@
         width: 300px
     .map
         width: 300px
+    .card
+        &:last-child
+            display: hidden
 @media (max-width: 992px)
     .container, 
     .newsletter-wrapper
@@ -62,6 +65,15 @@
         &-slider
             &__item
                 max-width: 579px
+    .activities
+        &-wrapper
+            flex-wrap: wrap
+        &__card
+            margin-bottom: 20px
+    .card
+        width: 339px
+        &:last-child
+            display: visible
 @media (max-width: 768px)
     .container, 
     .newsletter-wrapper
@@ -132,6 +144,12 @@
                     right: 50%
                     transform: translate(50%,0)
                     margin-right: -65px
+    .activities
+        padding-top: 40px
+        padding-bottom: 60px
+    .card
+        width: 49%
+        height: 255px
 @media (max-width: 576px)
     .logo
         max-width: 99px
@@ -150,4 +168,6 @@
                 font-size: 30px
         &__title
             margin-bottom: 37px
+    .card
+        width: 100%
            
