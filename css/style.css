@@ -1040,6 +1040,20 @@ template {
   font-size: 12px;
   color: #bdbdbd;
 }
+.footer__privacy {
+  grid-column: 2/4;
+}
+.footer__privacy--ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer__pay {
+  grid-column: 4;
+  display: flex;
+  justify-content: flex-end;
+}
 
 @media (max-width: 1200px) {
   .container {
