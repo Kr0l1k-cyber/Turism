@@ -1033,6 +1033,7 @@ template {
   background-color: #ec1f46;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 .footer__info {
   font-weight: 700;
@@ -1057,8 +1058,20 @@ template {
   .map {
     width: 300px;
   }
-  .card:last-child {
+  .activities-wrapper {
+    flex-wrap: wrap;
+  }
+  .activities__card {
+    width: 355px;
+  }
+  .activities__card:not(:nth-last-child(-n+2)) {
+    margin-bottom: 20px;
+  }
+  .activities__card:last-child {
     display: hidden;
+  }
+  .footer__input {
+    flex-basis: 100%;
   }
 }
 @media (max-width: 992px) {
@@ -1132,6 +1145,41 @@ template {
   }
   .card:last-child {
     display: visible;
+  }
+  .footer-wrapper {
+    grid-template-columns: repeat(6, 1fr);
+    grid-row-gap: 38px;
+  }
+  .footer__logo {
+    grid-row: 1/2;
+    grid-column: span 2;
+  }
+  .footer__social-network {
+    grid-row: 1/2;
+    grid-column: span 4;
+    align-self: center;
+  }
+  .footer__categories {
+    grid-row: 2/3;
+    grid-column: span 2;
+  }
+  .footer__legal {
+    grid-column: span 2;
+    margin: 0;
+  }
+  .footer__additional {
+    grid-column: span 2;
+  }
+  .footer__contact-details {
+    grid-row: 3;
+    grid-column: span 5;
+  }
+  .footer__contact-form {
+    grid-row: 4;
+    grid-column: span 5;
+  }
+  .footer__input {
+    flex-basis: 48%;
   }
 }
 @media (max-width: 768px) {
