@@ -1195,6 +1195,12 @@ template {
   .footer__input {
     flex-basis: 48%;
   }
+  .footer__privacy {
+    grid-column: span 3;
+  }
+  .footer__pay {
+    grid-column: 5;
+  }
 }
 @media (max-width: 768px) {
   .container,
@@ -1291,6 +1297,16 @@ template {
   .footer__contact-form {
     grid-column: span 6;
   }
+  .footer__privacy {
+    grid-column: span 6;
+  }
+  .footer__privacy--ul {
+    justify-content: space-between;
+  }
+  .footer__pay {
+    grid-column: span 3;
+    justify-content: flex-start;
+  }
 }
 @media (max-width: 576px) {
   .logo {
@@ -1351,6 +1367,21 @@ template {
   }
   .footer__contact-form {
     grid-row: 7;
+    grid-column: 1;
+  }
+  .footer__info {
+    flex-basis: 100%;
+    margin-bottom: 15px;
+  }
+  .footer__button {
+    order: 1;
+  }
+  .footer__privacy {
+    grid-row: 8;
+    grid-column: 1;
+  }
+  .footer__pay {
+    grid-row: 9;
     grid-column: 1;
   }
 }/*# sourceMappingURL=style.css.map */

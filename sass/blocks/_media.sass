@@ -112,6 +112,10 @@
                 grid-column: span 5        
         &__input
             flex-basis: 48%
+        &__privacy
+            grid-column: span 3
+        &__pay
+            grid-column: 5
 @media (max-width: 768px)
     .container, 
     .newsletter-wrapper
@@ -194,6 +198,13 @@
         &__contact
             &-form
                 grid-column: span 6
+        &__privacy
+            grid-column: span 6
+            &--ul
+                justify-content: space-between
+        &__pay
+            grid-column: span 3
+            justify-content: flex-start
 @media (max-width: 576px)
     .logo
         max-width: 99px
@@ -243,4 +254,15 @@
             &-form
                 grid-row: 7
                 grid-column: 1
+        &__info
+            flex-basis: 100%
+            margin-bottom: 15px
+        &__button
+            order: 1
+        &__privacy
+            grid-row: 8
+            grid-column: 1
+        &__pay
+            grid-row: 9
+            grid-column: 1
            
