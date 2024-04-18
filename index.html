@@ -61,7 +61,7 @@
 						<li class="navbar-menu__item navbar-menu__item--mobile_visible">
 							<a href="#" class="user navbar__user navbar__user--mobile_visible">
 								<img
-									src="Image/Avatar.png"
+									src="Image/Avatar.png"F
 									alt="Avatar: icon"
 									class="user__avatar"
 								/>
@@ -70,7 +70,7 @@
 						</li>
 						<li class="navbar-menu__item navbar-menu__item--mobile_visible">
 							<form
-								action="#"
+								action="send.php"
 								class="search navbar__search navbar__search--mobile_visible"
 							>
 								<input
@@ -552,22 +552,23 @@
 					<!-- /.footer__contact-details -->
 					<div class="footer__contact-form">
 						<h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-						<form action="#" class="footer__form">
+						<form action="send.php" class="footer__form" method="post">
 							<input
 								type="text"
 								class="input footer__input"
 								placeholder="Your Full Name*"
+								name="name"
 							/>
 							<input
 								type="text"
 								class="input footer__input"
 								placeholder="Phone Number*"
+								name="phone"
 							/>
 							<textarea
-								cols="30"
-								rows="10"
 								placeholder="Message"
 								class="footer__message"
+								name="message"
 							></textarea>
 							<button class="button footer__button" type="submit">Send</button>
 							<span class="footer__info">* Required Fields</span>
