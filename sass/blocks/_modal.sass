@@ -7,6 +7,12 @@
         bottom: 0
         background-color: rgba(0, 143, 223, 0.39)
         z-index: 10
+        visibility: hidden
+        opacity: 0
+        transition: opacity 0.2s
+        &--visible
+            visibility: visible
+            opacity: 1
     &__dialog
         position: fixed
         top: 50%
@@ -19,6 +25,12 @@
         border-radius: 8px
         max-width: 478px
         min-height: 487px
+        visibility: hidden
+        opacity: 1
+        transition: opacity 0.2s
+        &--visible
+            visibility: visible
+            opacity: 1
     &__close
         position: absolute
         right: 18px
