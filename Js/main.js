@@ -59,19 +59,22 @@ $(document).ready(function () {
 		modalDialog.removeClass('modal__dialog--visible')
 	}
 	// Обработка форм
-	$('.modal__form').validate({
-		messages: {
-			name: {
-				required: 'Enter your name',
-				minlength: 'Еhe name must be at least 2 letters',
+	$('.form').each(function () {
+		$(this).validate({
+			errorClass: "invalid",
+			messages: {
+				name: {
+					required: 'Enter your name',
+					minlength: 'Еhe name must be at least 2 letters',
+				},
+				email: {
+					required: 'We need your email address to contact you',
+					email: 'Your email address must be in the format of name@domain.com',
+				},
+				phone: {
+					required: 'Telephone required',
+				},
 			},
-			email: {
-				required: 'We need your email address to contact you',
-				email: 'Your email address must be in the format of name@domain.com',
-			},
-			phone: {
-				required: 'Telephone required',
-			},
-		},
-	})
-})
+		});
+	});
+});

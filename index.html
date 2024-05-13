@@ -552,19 +552,25 @@
 					<!-- /.footer__contact-details -->
 					<div class="footer__contact-form">
 						<h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-						<form action="send.php" class="footer__form" method="post">
-							<input
+						<form action="send.php" class="footer__form form" method="post">
+							<div class="footer__input-group">
+								<input
 								type="text"
 								class="input footer__input"
 								placeholder="Your Full Name*"
 								name="name"
+								required
 							/>
-							<input
+							</div>
+							<div class="footer__input-group">
+								<input
 								type="text"
 								class="input footer__input"
 								placeholder="Phone Number*"
 								name="phone"
+								required
 							/>
+							</div>
 							<textarea
 								placeholder="Message"
 								class="message footer__message"
@@ -611,7 +617,7 @@
 					<img src="Image/close.svg" alt="icon: close">
 				</a>
 				<h3 class="modal__title modal__title--mb-3">booking</h3>
-						<form action="send.php" class="modal__form" method="post">
+						<form action="send.php" class="modal__form form" method="post">
 							<input
 								type="text"
 								class="input modal__input"
@@ -654,24 +660,27 @@
 					<img src="Image/close.svg" alt="icon: close">
 				</a>
 				<h3 class="modal__title modal__title--mb-3">Send us a feedback</h3>
-						<form action="send.php" class="modal__form" method="post">
+						<form action="send.php" class="modal__form form" method="post">
 							<input
 								type="text"
 								class="input modal__input"
 								placeholder="Your Full Name*"
 								name="name"
+								required
 							/>
 							<input
 								type="text"
 								class="input modal__input"
 								placeholder="Phone Number*"
 								name="phone"
+								required
 							/>
 							<input
 								type="text"
 								class="input modal__input"
 								placeholder="Email*"
 								name="email"
+								required
 							/>
 							<textarea
 								placeholder="Message"
