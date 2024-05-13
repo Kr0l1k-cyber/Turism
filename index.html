@@ -617,12 +617,15 @@
 								class="input modal__input"
 								placeholder="Your Full Name*"
 								name="name"
+								required
+								minlength="2"
 							/>
 							<input
 								type="text"
 								class="input modal__input"
 								placeholder="Phone Number*"
 								name="phone"
+								required								
 							/>
 							<input
 								type="text"
@@ -683,6 +686,7 @@
 		<!-- /.modal -->
 		<script src="Js/jquery-3.7.1.min.js"></script>
 		<script src="Js/swiper-bundle.min.js"></script>
+		<script src="Js/jquery.validate.min.js"></script>
 		<script
 			src="https://api-maps.yandex.ru/2.1/?apikey=95ebe414-254f-473d-9ce4-eb481ce5f452&lang=ru_RU"
 			type="text/javascript"
