@@ -7,7 +7,7 @@ $(document).ready(function () {
 		},
 		effect: 'fade',
 	})
-	
+
 	let reviewsSlider = new Swiper('.reviews-slider', {
 		loop: true,
 		navigation: {
@@ -16,7 +16,7 @@ $(document).ready(function () {
 		},
 		effect: 'navigation',
 	})
-	
+
 	ymaps.ready(init)
 	function init() {
 		// Создание карты.
@@ -31,29 +31,47 @@ $(document).ready(function () {
 			zoom: 16,
 		})
 	}
-	
+
 	// кнопка меню
 	let menyButton = document.querySelector('.menu-button')
 	menyButton.addEventListener('click', function () {
 		console.log('Клик по кнопке меню')
-		document.querySelector('.navbar-bottom').classList.toggle('navbar-bottom--visible')
-	});
+		document
+			.querySelector('.navbar-bottom')
+			.classList.toggle('navbar-bottom--visible')
+	})
 
-	let modalButton = $('[data-togle=modal]');
-	let closeModalButton = $('.modal__close');
-	modalButton.on("click", openModal);
-	closeModalButton.on("click", closeModal);
+	let modalButton = $('[data-togle=modal]')
+	let closeModalButton = $('.modal__close')
+	modalButton.on('click', openModal)
+	closeModalButton.on('click', closeModal)
 
 	function openModal() {
-		let targeModal = $(this).attr('data-href');
-		$(targeModal).find(".modal__overlay").addClass('modal__overlay--visible');
-		$(targeModal).find(".modal__dialog").addClass('modal__dialog--visible');
-	};
+		let targeModal = $(this).attr('data-href')
+		$(targeModal).find('.modal__overlay').addClass('modal__overlay--visible')
+		$(targeModal).find('.modal__dialog').addClass('modal__dialog--visible')
+	}
 	function closeModal(event) {
-		event.preventDefault();
-		let modalOverlay = $(".modal__overlay");
-		let modalDialog = $(".modal__dialog");
-		modalOverlay.removeClass("modal__overlay--visible");
-		modalDialog.removeClass("modal__dialog--visible");
-	};
-});
+		event.preventDefault()
+		let modalOverlay = $('.modal__overlay')
+		let modalDialog = $('.modal__dialog')
+		modalOverlay.removeClass('modal__overlay--visible')
+		modalDialog.removeClass('modal__dialog--visible')
+	}
+	// Обработка форм
+	$('.modal__form').validate({
+		messages: {
+			name: {
+				required: 'Enter your name',
+				minlength: 'Еhe name must be at least 2 letters',
+			},
+			email: {
+				required: 'We need your email address to contact you',
+				email: 'Your email address must be in the format of name@domain.com',
+			},
+			phone: {
+				required: 'Telephone required',
+			},
+		},
+	})
+})
