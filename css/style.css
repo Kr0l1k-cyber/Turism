@@ -120,7 +120,8 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -440,7 +441,8 @@ template {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .user__name {
   font-weight: 400;
@@ -524,7 +526,8 @@ template {
   height: 100%;
   position: relative;
   border-radius: 8px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   overflow: hidden;
 }
 .hotel-slider__item::after {
@@ -542,7 +545,8 @@ template {
 .hotel-slider__image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .hotel-slider__button {
   position: absolute;
@@ -837,8 +841,10 @@ template {
   width: 90px;
   height: 90px;
   border-radius: 50%;
-  object-fit: cover;
-  object-position: top;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
   margin-bottom: 9px;
 }
 .reviews-slider__username {
@@ -912,7 +918,8 @@ template {
   right: 0;
   bottom: 0;
   left: 0;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   z-index: -2;
   width: 100%;
   height: 100%;
