@@ -61,7 +61,7 @@ $(document).ready(function () {
 	// Обработка форм
 	$('.form').each(function () {
 		$(this).validate({
-			errorClass: "invalid",
+			errorClass: 'invalid',
 			messages: {
 				name: {
 					required: 'Enter your name',
@@ -75,6 +75,7 @@ $(document).ready(function () {
 					required: 'Telephone required',
 				},
 			},
-		});
-	});
-});
+		})
+	})
+	AOS.init()
+})
